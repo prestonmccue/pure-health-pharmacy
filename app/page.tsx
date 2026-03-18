@@ -2,11 +2,23 @@
 
 import Link from 'next/link';
 import { useEffect, useRef } from 'react';
+import { 
+  Syringe, 
+  Heart, 
+  Scale, 
+  Dna, 
+  Sparkles, 
+  Leaf,
+  Package,
+  DollarSign,
+  Zap,
+  type LucideIcon
+} from 'lucide-react';
 
 type FeatureItem = {
   title: string;
   description: string;
-  icon: string;
+  icon: LucideIcon;
 };
 
 const valueBadges = ['50 State Shipping', 'Streamlined Technology', 'Best Industry Pricing', 'Fast Turnaround'];
@@ -22,17 +34,17 @@ const coreFeatures: FeatureItem[] = [
   {
     title: 'Single Shipping Rate',
     description: '$30 flat-fee cold chain shipping that keeps ordering simple and predictable.',
-    icon: '📦'
+    icon: Package
   },
   {
     title: 'Competitive Pricing Guaranteed',
     description: 'Maximize margin and patient affordability with transparent, reliable pricing.',
-    icon: '💰'
+    icon: DollarSign
   },
   {
     title: 'Designed for Busy Practices',
     description: 'A clinical-first workflow built to reduce admin burden and speed fulfillment.',
-    icon: '⚡'
+    icon: Zap
   }
 ];
 
@@ -40,32 +52,32 @@ const categories: FeatureItem[] = [
   {
     title: 'HRT/TRT Solutions',
     description: 'Injectable, topical, and oral formulations tailored for hormone optimization protocols.',
-    icon: '💊'
+    icon: Syringe
   },
   {
     title: 'Sexual Wellness',
     description: 'Male and female ED support across diverse delivery formats for individualized care.',
-    icon: '❤️'
+    icon: Heart
   },
   {
     title: 'Weight Loss Protocols',
     description: 'GLP-1 and peptide-based options to support evidence-driven metabolic treatment plans.',
-    icon: '🎯'
+    icon: Scale
   },
   {
     title: 'Performance & Recovery Peptides',
     description: 'Targeted peptide therapies for resilience, healthy aging, and recovery support.',
-    icon: '🧬'
+    icon: Dna
   },
   {
     title: 'Hair & Skin Health',
     description: 'Compounded therapies to support aesthetic outcomes and long-term skin and hair vitality.',
-    icon: '✨'
+    icon: Sparkles
   },
   {
     title: 'Comprehensive Wellness',
     description: 'Broader treatment options that help practices deliver whole-patient care strategies.',
-    icon: '🌿'
+    icon: Leaf
   }
 ];
 
@@ -263,7 +275,9 @@ export default function Home() {
                 style={{ animationDelay: `${idx * 100}ms` }}
               >
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-teal-500/5 to-cyan-500/5 opacity-0 transition group-hover:opacity-100" />
-                <span className="text-4xl">{feature.icon}</span>
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-teal-500 to-cyan-600 text-white shadow-lg shadow-teal-500/25">
+                  <feature.icon className="h-7 w-7" strokeWidth={1.5} />
+                </div>
                 <h3 className="mt-6 text-xl font-bold text-slate-900">{feature.title}</h3>
                 <p className="mt-3 text-slate-600 leading-relaxed">{feature.description}</p>
               </article>
@@ -289,7 +303,9 @@ export default function Home() {
                 style={{ animationDelay: `${idx * 75}ms` }}
               >
                 <div className="absolute top-0 right-0 h-32 w-32 rounded-full bg-gradient-to-br from-teal-100 to-cyan-100 blur-2xl opacity-50 transition group-hover:opacity-100" />
-                <span className="relative text-4xl">{category.icon}</span>
+                <div className="relative flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-teal-50 to-cyan-50 ring-1 ring-teal-100 transition group-hover:from-teal-500 group-hover:to-cyan-600 group-hover:ring-0">
+                  <category.icon className="h-8 w-8 text-teal-600 transition group-hover:text-white" strokeWidth={1.5} />
+                </div>
                 <h3 className="relative mt-6 text-xl font-bold text-slate-900">{category.title}</h3>
                 <p className="relative mt-3 text-slate-600 leading-relaxed">{category.description}</p>
               </article>
