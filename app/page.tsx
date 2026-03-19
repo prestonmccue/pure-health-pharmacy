@@ -160,7 +160,7 @@ export default function Home() {
               P
             </div>
             <div>
-              <p className="text-sm font-bold text-slate-900">Pure Health Pharmacy</p>
+              <p className="text-sm font-bold text-slate-900">Pure Health RX</p>
               <p className="text-xs text-slate-500">For Medical Professionals</p>
             </div>
           </div>
@@ -366,7 +366,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-12 lg:grid-cols-2 items-center">
             <div className="scroll-animate opacity-0 translate-y-8">
-              <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">Why Pure Health Pharmacy</h2>
+              <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">Why Pure Health RX</h2>
               <p className="mt-4 text-lg text-slate-600">
                 Infrastructure and clinical support focused on helping high-performing practices operate with less friction.
               </p>
@@ -494,7 +494,7 @@ export default function Home() {
                   P
                 </div>
                 <div>
-                  <p className="font-bold text-white">Pure Health Pharmacy</p>
+                  <p className="font-bold text-white">Pure Health RX</p>
                   <p className="text-sm text-slate-400">For Medical Professionals</p>
                 </div>
               </div>
@@ -511,12 +511,12 @@ export default function Home() {
             </div>
             <div>
               <h3 className="font-semibold text-white mb-4">Contact</h3>
-              <p className="text-slate-400">support@purehealthpharmacy.com</p>
+              <p className="text-slate-400">support@purehealthrx.com</p>
               <p className="text-slate-400 mt-2">Contact info coming soon</p>
             </div>
           </div>
           <div className="mt-12 pt-8 border-t border-white/10 text-center text-sm text-slate-500">
-            © {new Date().getFullYear()} Pure Health Pharmacy. All rights reserved.
+            © {new Date().getFullYear()} Pure Health RX. All rights reserved.
           </div>
         </div>
       </footer>

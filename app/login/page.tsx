@@ -6,7 +6,7 @@ export default function LoginPage() {
       <div className="mx-auto flex min-h-screen w-full max-w-md items-center px-6 py-16">
         <div className="w-full rounded-2xl border border-slate-200 bg-white p-8 shadow-card">
           <p className="text-xs font-semibold uppercase tracking-[0.15em] text-brand-700">Doctor Portal</p>
-          <h1 className="mt-2 text-3xl font-bold text-slate-900">Pure Health Pharmacy Login</h1>
+          <h1 className="mt-2 text-3xl font-bold text-slate-900">Pure Health RX Login</h1>
           <p className="mt-3 text-sm text-slate-600">Secure provider access. No backend authentication is connected yet.</p>
 
           <form className="mt-6 space-y-4">

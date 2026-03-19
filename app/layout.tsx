@@ -5,9 +5,9 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Pure Health Pharmacy | B2B Compounding Solutions',
+  title: 'Pure Health RX | B2B Compounding Solutions',
   description:
-    'Pure Health Pharmacy helps doctors, clinics, med spas, and telehealth teams streamline prescription fulfillment with fast turnaround and nationwide shipping.'
+    'Pure Health RX helps doctors, clinics, med spas, and telehealth teams streamline prescription fulfillment with fast turnaround and nationwide shipping.'
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
