@@ -14,6 +14,7 @@ import {
   Zap,
   type LucideIcon
 } from 'lucide-react';
+import { FloatingPills, HeroVisual } from './components/MedicalIllustrations';
 
 type FeatureItem = {
   title: string;
@@ -185,6 +186,9 @@ export default function Home() {
         <div className="absolute top-20 -left-32 h-96 w-96 rounded-full bg-gradient-to-br from-teal-200/60 to-cyan-200/60 blur-3xl animate-pulse-slow" />
         <div className="absolute bottom-20 -right-32 h-96 w-96 rounded-full bg-gradient-to-br from-cyan-200/60 to-teal-200/60 blur-3xl animate-pulse-slow animation-delay-2000" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[600px] w-[600px] rounded-full bg-gradient-to-br from-white/80 to-transparent blur-3xl" />
+        
+        {/* Floating pills decoration */}
+        <FloatingPills />
         
         <div className="relative mx-auto max-w-7xl px-6 py-20 lg:py-32">
           <div className="grid items-center gap-12 lg:grid-cols-2">
